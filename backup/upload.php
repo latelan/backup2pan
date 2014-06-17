@@ -6,7 +6,8 @@ require_once './common.inc.php';
 $file =  $argv[1];
 $fileName = basename($file);
 $newFileName = '';
-$remotePath = $ROOT_DIR."/$file";
+$filepath = dirname($file);
+$remotePath = $ROOT_DIR."/$filepath/";
 
 $pcs = new BaiduPCS(ACCESS_TOKEN);
 

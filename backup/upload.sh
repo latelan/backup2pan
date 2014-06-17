@@ -5,7 +5,6 @@
 while read line
 do
 	if [ -d "$line" ]; then
-		echo $line
 		php mkdir.php $line
 	elif [ -f "$line" ]; then
 		echo "FILE: $line"
